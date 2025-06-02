@@ -1,0 +1,6 @@
+@OneDrive_HostAddress = http://localhost:5267
+
+GET {{OneDrive_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,341 @@
+{
+  "name": "NewIndivid",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "File",
+      "filename": "File",
+      "seq": 4,
+      "root": {
+        "meta": {
+          "name": "File",
+          "seq": 4
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Download file",
+          "filename": "Download file.bru",
+          "seq": 6,
+          "request": {
+            "url": "http://localhost:5267/api/FileEntity/download/:fileId",
+            "method": "GET",
+            "headers": [],
+            "params": [
+              {
+                "name": "fileId",
+                "value": "5556ac4a-ee36-4485-960a-1891066254f7",
+                "type": "path",
+                "enabled": true
+              }
+            ],
+            "body": {
+              "mode": "file",
+              "json": "{\n  \"name\": \"Selfie.txt\",\n  \"folderId\": 1\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get all files",
+          "filename": "Get all files.bru",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:5267/api/FileEntity",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"name\": \"Selfie.txt\",\n  \"folderId\": 1\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Upload File",
+          "filename": "Upload File.bru",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:5267/api/FileEntity/upload",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "multipartForm",
+              "json": "{\n  \"name\": \"Nemo.mp4\",\n  \"folderId\": 2\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [
+                {
+                  "type": "text",
+                  "name": "FileName",
+                  "value": "idk.txt",
+                  "enabled": true
+                },
+                {
+                  "type": "text",
+                  "name": "FolderId",
+                  "value": "17f2a684-2b25-459c-b76e-80259562a5c7",
+                  "enabled": true
+                },
+                {
+                  "type": "file",
+                  "name": "File",
+                  "value": [
+                    "/home/arcoacrux/Documents/nada"
+                  ],
+                  "enabled": true
+                }
+              ],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "delete file",
+          "filename": "delete file.bru",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:5267/api/Document/1",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"name\": \"Nemo.mp4\",\n  \"folderId\": 2\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Folder",
+      "filename": "Folder",
+      "seq": 3,
+      "root": {
+        "meta": {
+          "name": "Folder",
+          "seq": 3
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Create Folder",
+          "filename": "Create Folder.bru",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:5267/api/Folder",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"name\": \"Pictures\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Delete Folder",
+          "filename": "Delete Folder.bru",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:5267/api/Folder",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"name\": \"Movies\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Get All Folders",
+          "filename": "Get All Folders.bru",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:5267/api/Folder",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"name\": \"Movies\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "User",
+      "filename": "User",
+      "seq": 2,
+      "root": {
+        "meta": {
+          "name": "User",
+          "seq": 2
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Login User",
+          "filename": "Login User.bru",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:5267/api/Auth/login",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"email\": \"Cosmo@Kramer.com\",\n  \"password\": \"Ironman123!\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Register User",
+          "filename": "Register User.bru",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:5267/api/Auth/register",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"email\": \"Cosmo@Kramer.com\",\n  \"password\": \"Ironman123!\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "environments": [],
+  "root": {
+    "request": {
+      "auth": {
+        "mode": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYzI0ZWViMy01ODdhLTQxYmQtYWU0NC0xNzdkZDg1YTIxZGEiLCJlbWFpbCI6IkNvc21vQEtyYW1lci5jb20iLCJqdGkiOiI5NWIxODVkOS1jYWM2LTQwNGQtOWI5Ny05ZWE4ZGQ0OTcyYzYiLCJleHAiOjE3NDg3MTI3OTgsImlzcyI6IkZpbGVTdG9yYWdlQXBpIiwiYXVkIjoiRmlsZVN0b3JhZ2VBcGkifQ._vKTzq3B7rEDyqdjnaR4vY3BGVKDy-HCvDZPmV7pXgc"
+        }
+      }
+    }
+  },
+  "brunoConfig": {
+    "version": "1",
+    "name": "NewIndivid",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.0023965835571289062,
+    "filesCount": 13
+  }
+}
