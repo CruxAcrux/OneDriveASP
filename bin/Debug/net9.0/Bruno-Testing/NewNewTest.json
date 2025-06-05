@@ -1,0 +1,479 @@
+{
+  "name": "TestGroup",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "OkEndpoint",
+      "filename": "OkEndpoint",
+      "seq": 3,
+      "root": {
+        "meta": {
+          "name": "OkEndpoint",
+          "seq": 3
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "CreateTransaction",
+          "filename": "CreateTransaction.bru",
+          "seq": 4,
+          "request": {
+            "url": "http://localhost:5255/transaction",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"title\": \"\",\n  \"amount\": ,\n  \"type\": \"\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "DeleteTransaction",
+          "filename": "DeleteTransaction.bru",
+          "seq": 15,
+          "request": {
+            "url": "http://localhost:5255/transaction/019713bc-6e86-7b3f-a2df-30e9c024b278",
+            "method": "DELETE",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "GetAllTransactions",
+          "filename": "GetAllTransactions.bru",
+          "seq": 5,
+          "request": {
+            "url": "http://localhost:5255/transaction",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "GetProfile",
+          "filename": "GetProfile.bru",
+          "seq": 3,
+          "request": {
+            "url": "http://localhost:5255/user/profile",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"email\": \"HejMinKompis@gmail.com\",\n  \"password\": \"HejMinKompis123!\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "LoginUser",
+          "filename": "LoginUser.bru",
+          "seq": 2,
+          "request": {
+            "url": "http://localhost:5255/user/login",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"email\": \"HejMinKompis@gmail.com\",\n  \"password\": \"HejMinKompis123!\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "RegisterUser",
+          "filename": "RegisterUser.bru",
+          "seq": 1,
+          "request": {
+            "url": "http://localhost:5255/user/register",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"username\": \"Ironman\",\n  \"email\": \"Ironman@Avengers.com\",\n  \"password\": \"Ironman123!\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Summary",
+          "filename": "Summary.bru",
+          "seq": 8,
+          "request": {
+            "url": "http://localhost:5255/transaction/summary",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TotalBalance",
+          "filename": "TotalBalance.bru",
+          "seq": 6,
+          "request": {
+            "url": "http://localhost:5255/transaction/total-balance",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TransactionByDate-RangeType",
+          "filename": "TransactionByDate-RangeType.bru",
+          "seq": 14,
+          "request": {
+            "url": "http://localhost:5255/transaction/by-date-range-and-type?startDate=2025-01-01&endDate=2025-06-25&transactionType=expense",
+            "method": "GET",
+            "headers": [],
+            "params": [
+              {
+                "name": "startDate",
+                "value": "2025-01-01",
+                "type": "query",
+                "enabled": true
+              },
+              {
+                "name": "endDate",
+                "value": "2025-06-25",
+                "type": "query",
+                "enabled": true
+              },
+              {
+                "name": "transactionType",
+                "value": "expense",
+                "type": "query",
+                "enabled": true
+              }
+            ],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TransactionByDate-range",
+          "filename": "TransactionByDate-range.bru",
+          "seq": 13,
+          "request": {
+            "url": "http://localhost:5255/transaction/date-range?startDate=2024-01-01&endDate=2025-06-25",
+            "method": "GET",
+            "headers": [],
+            "params": [
+              {
+                "name": "startDate",
+                "value": "2024-01-01",
+                "type": "query",
+                "enabled": true
+              },
+              {
+                "name": "endDate",
+                "value": "2025-06-25",
+                "type": "query",
+                "enabled": true
+              }
+            ],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TransactionByDay",
+          "filename": "TransactionByDay.bru",
+          "seq": 12,
+          "request": {
+            "url": "http://localhost:5255/transaction/day/2024/10/01",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TransactionByMonth",
+          "filename": "TransactionByMonth.bru",
+          "seq": 10,
+          "request": {
+            "url": "http://localhost:5255/transaction/month/2025/5",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TransactionByWeek",
+          "filename": "TransactionByWeek.bru",
+          "seq": 11,
+          "request": {
+            "url": "http://localhost:5255/transaction/week/2025/22",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TransactionByYear",
+          "filename": "TransactionByYear.bru",
+          "seq": 9,
+          "request": {
+            "url": "http://localhost:5255/transaction/year/2025",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "TransactionType",
+          "filename": "TransactionType.bru",
+          "seq": 7,
+          "request": {
+            "url": "http://localhost:5255/transaction/type/expense",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "json": "{\n  \"title\": \"CSN\",\n  \"amount\": 13000,\n  \"type\": \"income\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "environments": [],
+  "root": {
+    "request": {
+      "auth": {
+        "mode": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjE0NzRmYzFmLWIwOTYtNDk5Mi1hM2EyLThiMmYxODk4ZDI3YiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJIZWpNaW5Lb21waXMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJIZWpNaW5Lb21waXNAZ21haWwuY29tIiwiZXhwIjoxNzQ4ODA1NTkwLCJpc3MiOiJZb3VyQXBwTmFtZSIsImF1ZCI6IllvdXJBcHBOYW1lIn0.3KzEqjGfYT02L5TlRuVF2zKw8rM3QRZF5NZYU5jkNwI"
+        }
+      }
+    }
+  },
+  "brunoConfig": {
+    "version": "1",
+    "name": "TestGroup",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.0041027069091796875,
+    "filesCount": 17
+  }
+}
