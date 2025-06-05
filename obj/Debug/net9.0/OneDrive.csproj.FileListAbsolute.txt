@@ -143,3 +143,6 @@
 /home/arcoacrux/Projects/Codes/BackEnd/OneDrive/obj/Debug/net9.0/OneDrive.pdb
 /home/arcoacrux/Projects/Codes/BackEnd/OneDrive/obj/Debug/net9.0/OneDrive.genruntimeconfig.cache
 /home/arcoacrux/Projects/Codes/BackEnd/OneDrive/obj/Debug/net9.0/ref/OneDrive.dll
+/home/arcoacrux/Projects/Codes/BackEnd/OneDrive/bin/Debug/net9.0/Bruno-Testing/NewIndivid.json
+/home/arcoacrux/Projects/Codes/BackEnd/OneDrive/bin/Debug/net9.0/Bruno-Testing/NewNewTest.json
+/home/arcoacrux/Projects/Codes/BackEnd/OneDrive/obj/Debug/net9.0/OneDrive.sourcelink.json

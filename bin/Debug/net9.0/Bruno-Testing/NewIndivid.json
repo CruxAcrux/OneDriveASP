@@ -129,7 +129,7 @@
           "filename": "delete file.bru",
           "seq": 4,
           "request": {
-            "url": "http://localhost:5267/api/FileEntity/13df4df7-363d-4b1b-8e34-d46bbbb9250e",
+            "url": "http://localhost:5267/api/Document/1",
             "method": "DELETE",
             "headers": [],
             "params": [],
@@ -176,7 +176,7 @@
             "params": [],
             "body": {
               "mode": "json",
-              "json": "{\n  \"name\": \"PirateGames\"\n}",
+              "json": "{\n  \"name\": \"Pictures\"\n}",
               "formUrlEncoded": [],
               "multipartForm": [],
               "file": []
@@ -197,7 +197,7 @@
           "filename": "Delete Folder.bru",
           "seq": 3,
           "request": {
-            "url": "http://localhost:5267/api/Folder/705edbf2-ddb6-40b7-aaef-818265eedacb",
+            "url": "http://localhost:5267/api/Folder",
             "method": "DELETE",
             "headers": [],
             "params": [],
@@ -322,7 +322,7 @@
       "auth": {
         "mode": "bearer",
         "bearer": {
-          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYzI0ZWViMy01ODdhLTQxYmQtYWU0NC0xNzdkZDg1YTIxZGEiLCJlbWFpbCI6IkNvc21vQEtyYW1lci5jb20iLCJqdGkiOiI5YTRhZTBjMC0zOWYzLTRkZTktYTI5YS1mOTVmZDYzNzUyNWQiLCJleHAiOjE3NDkxMjE4NzAsImlzcyI6IkZpbGVTdG9yYWdlQXBpIiwiYXVkIjoiRmlsZVN0b3JhZ2VBcGkifQ.EJWf_Y7ysD1Uf-1twE87dOSPINHWCX2bJUW_M_9Vbz0"
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYzI0ZWViMy01ODdhLTQxYmQtYWU0NC0xNzdkZDg1YTIxZGEiLCJlbWFpbCI6IkNvc21vQEtyYW1lci5jb20iLCJqdGkiOiI5NWIxODVkOS1jYWM2LTQwNGQtOWI5Ny05ZWE4ZGQ0OTcyYzYiLCJleHAiOjE3NDg3MTI3OTgsImlzcyI6IkZpbGVTdG9yYWdlQXBpIiwiYXVkIjoiRmlsZVN0b3JhZ2VBcGkifQ._vKTzq3B7rEDyqdjnaR4vY3BGVKDy-HCvDZPmV7pXgc"
         }
       }
     }
@@ -335,7 +335,7 @@
       "node_modules",
       ".git"
     ],
-    "size": 0.0024700164794921875,
+    "size": 0.0023965835571289062,
     "filesCount": 13
   }
 }
